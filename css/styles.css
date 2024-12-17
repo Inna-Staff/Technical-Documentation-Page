@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: rgb(55, 54, 54);
+  display: flex;
+  font-size: 14px;
+}
+#navbar {
+  width: 300px;
+  height: 100vh;
+  min-width: 290px;
+  position: fixed;
+  border-right: 3px solid rgb(119, 115, 115);
+}
+header {
+  text-align: left;
+  padding: 15px;
+  color: black;
+  font-size: 1.8rem;
+  margin: 0;
+  height: 80px;
+}
+#navbar ul {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 88%;
+  overflow-x: hidden;
+}
+#main-doc {
+  flex-grow: 1;
+  position: absolute;
+  margin-left: 310px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+#navbar li {
+  border-top: 1px solid rgb(99, 96, 96);
+  width: 100%;
+}
+#navbar a {
+  text-decoration: none;
+  color: rgb(55, 54, 54);
+  padding-left: 25px;
+  display: flex;
+  font-size: 1.1rem;
+  align-items: center;
+  height: 70px;
+  padding-top: 25px;
+}
+code {
+  border: none;
+  padding: 2px;
+  background-color: rgb(229, 228, 228);
+  border-radius: 5px;
+}
+#main-doc {
+  line-height: 2;
+  padding-left: 30px;
+}
+#main-doc header {
+  margin-top: 15px;
+  padding-left: 0;
+}
+#main-doc ul,
+ol {
+  padding-left: 70px;
+}
+#main-doc li {
+  padding-bottom: 8px;
+}
+p {
+  padding-left: 20px;
+  padding-bottom: 8px;
+}
+a.documentation-page {
+  padding-bottom: 40px;
+  color: rgb(92, 20, 159);
+}
+
+a.documentation-page:visited {
+  color: rgb(166, 77, 250);
+}
+@media screen and (max-width: 800px) {
+  #navbar {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 300px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+    background-color: white;
+
+    overflow-y: hidden;
+  }
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 300px;
+  }
+  #navbar a {
+    height: 15px;
+  }
+  #navbar header {
+    margin-bottom: 10px;
+    max-height: 22px;
+    padding-top: 8px;
+  }
+}
+@media screen and (max-width: 550px) {
+  #main-doc header {
+    font-size: 1.6rem;
+  }
+}
